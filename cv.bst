@@ -390,7 +390,7 @@ FUNCTION {format.url}
   if$
   duplicate$ empty$
     { pop$ "" }
-    { "\urlprefix\href{" swap$ * "}{" doi * "}" * }
+    { "\href{" swap$ * "}{DOI}" * }
   if$
 }
 
