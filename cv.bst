@@ -412,6 +412,10 @@ FUNCTION {format.names}
       "{vv~}{ll}{ f{}}{ jj}"
       format.name$
       remove.dots
+      duplicate$ "Lee HN" =
+        { bolden }
+        { skip$ }
+      if$
       bibinfo bibinfo.check
       't :=
       nameptr #1 >
