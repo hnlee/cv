@@ -1534,13 +1534,15 @@ FUNCTION {begin.bib}
   write$ newline$
   "\providecommand{\urlprefix}{URL }"
   write$ newline$
+  "\raggedright{"
+  write$ newline$
 }
 EXECUTE {begin.bib}
 EXECUTE {init.state.consts}
 ITERATE {call.type$}
 FUNCTION {end.bib}
 { newline$
-  "\end{thebibliography}" write$ newline$
+  "}\end{thebibliography}" write$ newline$
 }
 EXECUTE {end.bib}
 %% End of customized bst file
