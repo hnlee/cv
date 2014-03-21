@@ -1,40 +1,182 @@
-\documentclass[letterpaper,10pt]{article}
+\documentclass[letterpaper,12pt]{article}
 \pagestyle{empty}
 
 % For publications list
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{natbib}
-\usepackage[colorlinks,urlcolor=Green]{hyperref}
+\usepackage[colorlinks,breaklinks,urlcolor=Green]{hyperref}
 \renewcommand\refname{Publications}
 
+% For global font and paragraph settings
+\usepackage{lmodern}
+\renewcommand*\familydefault{\sfdefault}
+\renewcommand*\sfdefault{lmss}
+\setlength\parindent{0in}
+
+% For margins
+\usepackage[margin=1in]{geometry}
 
 % For CV section headings
+\usepackage{sectsty}
+\allsectionsfont{\mdseries\scshape\raggedright\large}
+
+% For items in CV sections
+\newcommand{\cvitem}[3]{
+    \parbox[t]{0.13\textwidth}{
+        \raggedleft{#1}
+    }
+    \hfill
+    \parbox[t]{0.83\textwidth}{
+        \raggedright{\textbf{#2}}
+
+        \raggedright{\hangindent=1.2em #3}
+    }
+    \vspace{1.2em}
+}
+
+% For name in header
+\newcommand{\name}[2]{
+    \parbox[b][3em][c]{0.3\textwidth}{
+        \Huge\textsc{#1}
+    }
+    \parbox[b][3em][b]{0.7\textwidth}{
+        \raggedleft{#2}
+    }
+    \rule[0pt]{\textwidth}{0.5pt}
+}
 
 
 \begin{document}
 
-\section*{Contact Information}
-
-
+\name{Hana Lee}{
+    Department of Ecology \& Evolution \textbullet\ University of Chicago\\
+    1101 E. 57th Street \textbullet\ Chicago, IL 60637 \textbullet\ 510.485.9130\\
+    hanalee@uchicago.edu \textbullet\ \href{http://www.hanalee.info}{www.hanalee.info}
+}
 
 \section*{Education}
 
+\cvitem{Dec 2012}
+    {Ph.D. in Molecular \& Cell Biology with Designated Emphasis in
+Computational \& Genomic Biology}
+    {University of California, Berkeley\\
+    Dissertation: "Investigating genetic determinants of phenotypic variation in
+natural isolates of \emph{Saccharomyces cerevisiae}"}
+
+\cvitem{Jun 2007}
+    {A.B. \emph{cum laude} with High Honors in Biochemical Sciences}
+    {Harvard University\\
+    Honors thesis: "Array-based high-resolution genotyping of recombinant inbred
+lines for quantitative trait loci analysis"}
 
 \section*{Research Experience}
+
+\cvitem{2013-now}
+    {Postdoctoral researcher with Dr. Joy Bergelson}
+    {Department of Ecology \& Evolution, University of Chicago}
+
+\cvitem{2007-2013}
+    {Graduate student researcher with Dr. Rachel Brem}
+    {Department of Molecular \& Cell Biology, University of California,
+Berkeley}
+
+\cvitem{2007-2008}
+    {Rotation student with Dr. Rachel Brem, Dr. Michael Eisen, and Dr. Michael Levine}
+    {Department of Molecular \& Cell Biology, University of California,
+Berkeley}
+
+\cvitem{2004-2007}
+    {Undergraduate researcher with Dr. Christine Queitsch}
+    {FAS Center for Systems Biology, Harvard University}
 
 \nocite{*}
 \bibliographystyle{cv}
 \bibliography{cv}
 
-\section*{Honors and Awards}
+\section*{Grants, Honors and Awards}
+
+\cvitem{2013-now}
+    {V. Dropkin Postdoctoral Fellowship}
+    {}
+
+\cvitem{2009-2011}
+    {Soros Fellowship for New Americans}
+    {}
+
+\cvitem{2009}
+    {NSF Graduate Research Fellowship Program Honorable Mention}
+    {}
+
+\cvitem{2007-2009}
+    {NIH Genetics Predoctoral Training Grant}
+    {}
+
+\cvitem{2007}
+    {Thomas T. Hoopes Prize}
+    {}
+
+\cvitem{2007}
+    {NSF Graduate Research Fellowship Program Honorable Mention}
+    {}
 
 \section*{Teaching Experience}
 
+\cvitem{Spr 2012}
+    {Workshop instructor for RNA-Seq Data Analysis Workshop}
+    {Computational Genomics Resource Laboratory, University of California,
+Berkeley}
+
+\cvitem{Spr 2010}
+    {Graduate student instructor for MCB 240L: Genetics Laboratory}
+    {Department of Molecular \& Cell Biology, University of California,
+Berkeley}
+
+\cvitem{Fall 2008}
+    {Graduate student instructor for MCB 142: Survey of General Genetics}
+    {Department of Molecular \& Cell Biology, University of California,
+Berkeley}
+
 \section*{Professional Meetings}
 
-\section*{Presentations}
+\cvitem{Jun 2013}
+    {Society for Molecular Biology and Evolution}
+    {}
+
+\cvitem{Jul 2011}
+    {Gordon Research Conference on Ecological \& Evolutionary Genomics}
+    {Poster: "Using population genomic data to investigate morphological
+variation in \emph{Saccharomyces cerevisiae}"}
+
+\cvitem{Aug 2006}
+    {American Society for Plant Biologists}
+    {}
+
+\section*{Programming Skills}
+
+Interpreted languages: R, Python, Perl 
+
+Bioinformatics software: bowtie, samtools, Bioconductor
+
+Database management: SQLite
+
+Version control: Git, Mercurial
+
+Markup languages: HTML, CSS, \LaTeX
+
+Web framework: Django
 
 \section*{Professional Affiliations}
 
+\cvitem{2013-now}
+    {Genetics Society of America}
+    {}
+
+\cvitem{2013-now}
+    {Society for Molecular Biology and Evolution}
+    {}
+
+\cvitem{2013-now}
+    {National Postdoctoral Association}
+    {}
 
 \end{document}
