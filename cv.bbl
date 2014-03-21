@@ -1,0 +1,44 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem[{Lee \textit{et~al.}(2013)Lee, Mostovoy, Hsu, Chang, \&
+  Brem}]{lee2013divergence}
+\textbf{Lee HN}, Mostovoy Y, Hsu TY, Chang AH, Brem RB (2013).
+\newblock Divergence of iron metabolism in wild {M}alaysian yeast.
+\newblock \textit{G3: Genes, Genomes, Genetics} \textbf{3(12)}: 2187--2194.
+\newblock doi:
+  \href{http://dx.doi.org/10.1534/g3.113.008011}{10.1534/g3.113.008011}.
+
+\bibitem[{Lee \textit{et~al.}(2011)Lee, Magwene, \& Brem}]{lee2011natural}
+\textbf{Lee HN}, Magwene PM, Brem RB (2011).
+\newblock Natural variation in \textit{{CDC28}} underlies morphological
+  phenotypes in an environmental yeast isolate.
+\newblock \textit{Genetics} \textbf{188(3)}: 723--730.
+\newblock doi:
+  \href{http://dx.doi.org/10.1534/genetics.111.128819}{10.1534/genetics.111.128819}.
+
+\bibitem[{Sangster \textit{et~al.}(2008)Sangster, Salathia, Lee, Watanabe,
+  Schellenberg, Morneau, Wang, Undurraga, Queitsch, \&
+  Lindquist}]{sangster2008hsp90}
+Sangster TA, Salathia N, \textbf{Lee HN}, Watanabe E, Schellenberg K, Morneau
+  K, Wang H, Undurraga S, Queitsch C, Lindquist S (2008).
+\newblock {HSP90}-buffered genetic variation is common in \textit{{Arabidopsis
+  thaliana}}.
+\newblock \textit{Proceedings of the National Academy of Sciences}
+  \textbf{105(8)}: 2969--2974.
+\newblock doi:
+  \href{http://dx.doi.org/10.1073/pnas.0712210105}{10.1073/pnas.0712210105}.
+
+\bibitem[{Salathia \textit{et~al.}(2007)Salathia, Lee, Sangster, Morneau,
+  Landry, Schellenberg, Behere, Gunderson, Cavalieri, Jander
+  \textit{et~al.}}]{salathia2007technical}
+Salathia N, \textbf{Lee HN}, Sangster TA, Morneau K, Landry CR, Schellenberg K,
+  Behere AS, Gunderson KL, Cavalieri D, Jander G, \textit{et~al.} (2007).
+\newblock Indel arrays: an affordable alternative for genotyping.
+\newblock \textit{The Plant Journal} \textbf{51(4)}: 727--737.
+\newblock doi:
+  \href{http://dx.doi.org/10.1111/j.1365-313X.2007.03194.x}{10.1111/j.1365-313X.2007.03194.x}.
+
+\end{thebibliography}
