@@ -1,11 +1,8 @@
 \documentclass[letterpaper,12pt]{article}
 \pagestyle{empty}
 
-% For publications list
 \usepackage[usenames,dvipsnames]{color}
-\usepackage{natbib}
 \usepackage[colorlinks,breaklinks,urlcolor=Green]{hyperref}
-\renewcommand\refname{Publications}
 
 % For global font and paragraph settings
 \usepackage{lmodern}
@@ -22,42 +19,49 @@
 
 % For header
 \newcommand{\header}[2]{
-    \parbox[b][3em][c]{0.3\textwidth}{
+    \parbox{\textwidth}{
         \Huge\textsc{#1}
     }
-    \rule[0pt]{\textwidth}{0.5pt}
-    \parbox[c]{\textwidth}{
+    \parbox{\textwidth}{
         \centering{#2}
     }
 } 
 
 \begin{document}
 
-\header{Hana Lee}{
-    \textbf{email}\href{mailto:hanalee07@gmail.com}{hanalee07@gmail.com}
-    \bullet
-    \textbf{website}\href{http://www.hanalee.info}{www.hanalee.info}
-    \bullet
-    \textbf{github}\href{https://github.com/hnlee}{hnlee}
-    \bullet
-    \textbf{linkedin}\href{https://www.linkedin.com/in/hanalee07}{hanalee07}
-}
+{\Huge\textsc{Hana Lee}}\\
+\rule[0.5em]{\textwidth}{0.5pt}
+
+\begin{center}
+    \href{hanalee07@gmail.com}{hanalee07@gmail.com}
+    \textbullet\enskip\href{http://hanalee.info}{hanalee.info}
+    \textbullet\enskip\textbf{github} \href{https://github.com/hnlee}{hnlee}
+    \textbullet\enskip\textbf{linkedin} \href{https://www.linkedin.com/in/hanalee07}{hanalee07}
+\end{center}
+
 
 \section*{Summary}
 \begin{itemize}
-    \item Scientist interested in exploring and analyzing big data, currently seeking position as a data scientist.
+    \item Scientist interested in exploring and analyzing big data to solve meaningful problems.
     \item Former career as a genetics and genomics researcher, with expertise in analysis of next-generation sequencing data sets and scientific computing for the life sciences.
 \end{itemize}
 
 \section*{Skills}
 \begin{itemize}
-    \item Scientific computing and visualization: \textbf{R} and \textbf{Python} 
+    \item Scientific computing and visualization 
         \begin{itemize}
-            \item R packages: \texttt{caret}, \texttt{ggplot2}, \texttt{shiny}, \texttt{knitr}
-            \item Python packages: \texttt{numpy}, \texttt{pandas}, \texttt{scikit-learn}, \texttt{seaborn}, \texttt{jupyter}
+            \item \textbf{R:} \texttt{caret}, \texttt{ggplot2}, \texttt{shiny}, \texttt{knitr}
+            \item \textbf{Python:} \texttt{numpy}, \texttt{pandas}, \texttt{scikit-learn}, \texttt{seaborn}, \texttt{jupyter}
         \end{itemize}
-    \item Relational databases: \textbf{SQLite} and \textbf{MySQL}
-    \item Web framework: \textbf{Django}
+    \item Relational databases: \textbf{SQLite}, \textbf{MySQL}
+    \item Web frameworks: \textbf{Django}, \textbf{web2py}
+\end{itemize}
+
+\section*{Roles and experiences}
+\begin{itemize}
+    \item \textbf{Data analysis and visualization:} I built data cleaning and processing pipelines in Python for terabyte-scale data sets and used R for exploratory data analysis and statistical testing, with nonparametric methods, generalized linear models, and multiple testing correction.
+    \item \textbf{Teaching and communication:} I introduced undergraduate and doctoral students to programming through Python and R. I also co-taught a workshop for scientists on analyzing next-generation sequencing data in R. I am expert at communicating complex information to nonspecialist audiences through data visualization and oral presentations.
+    \item \textbf{Self-directed learning:} As side projects, I built a classification model to predict exercise movements, created a webapp to deliver predictions on gas mileage, developed a web interface to crowdsource media metadata, wrote the backend for a website to manage invitations, and maintained a donations website. I am currently working on the Yelp Dataset Challenge and Kaggle competitions. 
 \end{itemize}
 
 \section*{Education}
@@ -65,13 +69,4 @@
     \item 2012 \textbf{Ph.D.} Molecular Biology, University of California, Berkeley
     \item 2007 \textbf{A.B.} Biochemical Sciences, Harvard University
 \end{itemize}
-
-\section*{Roles and experiences}
-\begin{itemize}
-    \item \textbf{Data analysis and visualization:} In my graduate student researcher and postdoctoral fellow positions, I routinely built data cleaning and processing pipelines in Python for large genomic data sets and used R for exploratory data analysis and statistical testing. I have experience with nonparametric tests and generalized linear models, as well as using SQL databases for data management.
-    \item \textbf{Teaching:} In the process of supervising technicians and student researchers, I have frequently taught them basic Python and R as part of their training. I have also co-taught a one-day workshop on using R to analyze next-generation sequencing data.
-    \item \textbf{Communication:} As an interdisciplinary researcher, I am experienced in communicating complex information to nonspecialist audiences, in the form of data visualization and oral presentations.
-    \item \textbf{Self-directed learning:} I have worked on several data science projects taking MOOC on machine learning and participating in the Chicago Python User Group's mentorship program, including: developing a classification model to predict exercise movements from accelerometer data, building a \texttt{shiny} webapp to deliver predictions on gas mileage based on a linear regression model, and working on various challenges, such as the Yelp Dataset Challenge and Kaggle.
-\end{itemize}
-
 \end{document}
