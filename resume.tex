@@ -11,34 +11,24 @@
 \setlength\parindent{0in}
 
 % For margins
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=0.75in]{geometry}
 
 % For CV section headings
 \usepackage{sectsty}
-\allsectionsfont{\mdseries\scshape\raggedright\large}
-
-% For header
-\newcommand{\header}[2]{
-    \parbox{\textwidth}{
-        \Huge\textsc{#1}
-    }
-    \parbox{\textwidth}{
-        \centering{#2}
-    }
-} 
+\sectionfont{\mdseries\scshape\raggedright\large}
+\subsectionfont{\mdseries\itshape\raggedright\normalsize}
 
 \begin{document}
 
 {\Huge\textsc{Hana Lee}}\\
-\rule[0.5em]{\textwidth}{0.5pt}
+\rule[1mm]{\textwidth}{0.5pt}
 
-\begin{center}
+\footnotesize\begin{center}
     \href{hanalee07@gmail.com}{hanalee07@gmail.com}
     \textbullet\enskip\href{http://hanalee.info}{hanalee.info}
     \textbullet\enskip\textbf{github} \href{https://github.com/hnlee}{hnlee}
     \textbullet\enskip\textbf{linkedin} \href{https://www.linkedin.com/in/hanalee07}{hanalee07}
 \end{center}
-
 
 \section*{Summary}
 \begin{itemize}
@@ -46,22 +36,42 @@
     \item Former career as a genetics and genomics researcher, with expertise in analysis of next-generation sequencing data sets and scientific computing for the life sciences.
 \end{itemize}
 
-\section*{Skills}
+\section*{Roles and experiences}
+
+ 
+
+\subsection*{Data analysis and visualization}
 \begin{itemize}
-    \item Scientific computing and visualization 
-        \begin{itemize}
-            \item \textbf{R:} \texttt{caret}, \texttt{ggplot2}, \texttt{shiny}, \texttt{knitr}
-            \item \textbf{Python:} \texttt{numpy}, \texttt{pandas}, \texttt{scikit-learn}, \texttt{seaborn}, \texttt{jupyter}
-        \end{itemize}
-    \item Relational databases: \textbf{SQLite}, \textbf{MySQL}
-    \item Web frameworks: \textbf{Django}, \textbf{web2py}
+    \item Built data cleaning and processing pipelines in Python for terabyte-scale data sets
+    \item Used R for exploratory data analysis and statistical testing, including nonparametric methods, generalized linear models, and multiple testing correction
+    \item Wrote Python script to semiautomate colony counting on images
+    \item Rewrote R code developed by collaborator in Python with data storage in SQLite for faster implementation
+ \end{itemize}
+ 
+\subsection*{Teaching and communication}
+\begin{itemize} 
+    \item Introduced undergraduate and doctoral students to programming through Python and R
+    \item Co-taught a workshop for scientists on analyzing next-generation sequencing data in R
+    \item Expert at communicating complex information to nonspecialist audiences through data visualization and oral presentations
 \end{itemize}
 
-\section*{Roles and experiences}
+\subsection*{Machine learning projects}
 \begin{itemize}
-    \item \textbf{Data analysis and visualization:} I built data cleaning and processing pipelines in Python for terabyte-scale data sets and used R for exploratory data analysis and statistical testing, with nonparametric methods, generalized linear models, and multiple testing correction.
-    \item \textbf{Teaching and communication:} I introduced undergraduate and doctoral students to programming through Python and R. I also co-taught a workshop for scientists on analyzing next-generation sequencing data in R. I am expert at communicating complex information to nonspecialist audiences through data visualization and oral presentations.
-    \item \textbf{Self-directed learning:} As side projects, I built a classification model to predict exercise movements, created a webapp to deliver predictions on gas mileage, developed a web interface to crowdsource media metadata, wrote the backend for a website to manage invitations, and maintained a donations website. I am currently working on the Yelp Dataset Challenge and Kaggle competitions. 
+    \item \textbf{San Francisco crime classification}
+        \begin{itemize}
+            \item Developed model averaging predictions from logistic regression and random forests using Python as project for Chicago Python User Group (ChiPy) Fall 2015 Mentorship Program
+            \item Submitted to Kaggle competition and placed in top 25\% of the leaderboards
+            \item Presented work at the ChiPy January 2016 meeting (see \href{http://hnlee.github.io/sfcrimes/#/}{slides})
+        \end{itemize}
+    \item \textbf{Gas mileage prediction:} Developed generalized linear model trained on fuel economy data set using R, and created webapp using \texttt{shiny} to deliver mileage predictions and display plots in response to user input (see \href{https://hnlee.shinyapps.io/shinyapp/}{webapp})
+    \item \textbf{Bicep curl classification:} Developed random forests model trained on accelerometer data set using R, and wrote report in \texttt{knitr} (see \href{http://hnlee.github.io/pmlCourseProject/}{report}) 
+\end{itemize}
+ 
+\subsection*{Web development}
+\begin{itemize}
+    \item Maintained a donations website written in \texttt{web2py} for alumni organization
+    \item Created backend in \texttt{django} with SQLite database for a website to manage event invitations
+    \item Built web interface in \texttt{django} with MySQL database to crowdsource and display media metadata
 \end{itemize}
 
 \section*{Education}
